@@ -18,6 +18,6 @@ app.get('/', (req, res) => {
   res.sendFile('index.html');
 });
 
-app.listen(12345, 'localhost', function() {
-  console.log('app started');
+app.listen(process.env.PORT, process.env.IP, function() {
+  console.log('server started');
 });
