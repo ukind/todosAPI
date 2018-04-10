@@ -26,6 +26,10 @@ header h2 {
   font-weight: 300;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .form{
   width: 800px;
   margin: 50px auto 20px;
@@ -54,7 +58,7 @@ header h2 {
   line-height: 60px;
   font-size: 20px;
   padding: 0 20px;
-  color: #34495e;
+  color: rgb(0, 0, 0);
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -65,5 +69,26 @@ header h2 {
 }
 
 .task:hover span {
+  opacity: 1;
+}
+
+.done {
+  -webkit-transition: all 1s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  text-decoration: line-through;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+li span{
+  float: right;
+  color: rgb(255, 0, 0);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+li span:hover{
   opacity: 1;
 }
